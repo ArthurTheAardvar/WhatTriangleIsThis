@@ -6,9 +6,9 @@ for i in range(cases): #go through the other lines
     
     line = line.split(", ") #split up the line by spaces
      
-    a = int(line[0])
-    b = int(line[1])
-    c = int(line[2])
+    a = float(line[0])
+    b = float(line[1])
+    c = float(line[2])
 
     if a + b > c:
         if a == b != c or a == c != b or b == c != a:
