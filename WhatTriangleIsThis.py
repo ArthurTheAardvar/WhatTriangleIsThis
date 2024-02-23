@@ -16,16 +16,17 @@ for i in range(cases): #go through the other lines
     b = float(line[1])
     c = float(line[2])
 
-    if better_round(a + b > c):
-        if better_round(a == b != c or a == c != b or b == c != a):
+    if a + b > c:
+        if a == b and a != c or b == c and b != a or c == a and c != b:
             print("Isosceles")
         
 
-        elif better_round(a == b and a == c and b == c):
+        elif a == b and a == c and b == c:
             print("Equilateral")
-        if better_round(a + b > c):
-            if better_round(a != b and a != c and b != c):
+
+        if a + b > c:
+            if a != b and a != c and b != c:
                 print("Scalene")
 
-    if better_round(a + b < c):
+    if a + b < c:
         print("Not a Triangle")
