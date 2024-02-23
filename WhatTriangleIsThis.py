@@ -4,7 +4,7 @@ cases = int(input())
 for i in range(cases): #go through the other lines
     line = input().rstrip()
     
-    line = line.split(" ") #split up the line by spaces
+    line = line.split(", ") #split up the line by spaces
      
     a = int(line[0])
     b = int(line[1])
