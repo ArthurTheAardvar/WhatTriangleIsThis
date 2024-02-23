@@ -16,7 +16,11 @@ for i in range(cases): #go through the other lines
     b = float(line[1])
     c = float(line[2])
 
-    if a + b > c:
+
+    if a + b <= c or b + c <= a or c + a <= b:
+        print("Not a Triangle")
+        
+    else:
         if a == b and a != c or b == c and b != a or c == a and c != b:
             print("Isosceles")
         
@@ -28,5 +32,4 @@ for i in range(cases): #go through the other lines
             if a != b and a != c and b != c:
                 print("Scalene")
 
-    if a + b < c:
-        print("Not a Triangle")
+    
